@@ -1,24 +1,25 @@
 [package]
-name = "rustlings"
-description = "Small exercises to get you used to reading and writing Rust code!"
-version = "5.6.1"
 authors = [
-  "Liv <mokou@fastmail.com>",
   "Carol (Nichols || Goulding) <carol.nichols@gmail.com>",
+  "Liv <mokou@fastmail.com>",
 ]
+description = "Small exercises to get you used to reading and writing Rust code!"
 edition = "2021"
+name = "rustlings"
+version = "5.6.1"
 
 [dependencies]
-indicatif = "0.17.6"
+clap = { version = "4.4.0", features = ["derive"] }
 console = "0.15"
+glob = "0.3.0"
+home = "0.5.3"
+indicatif = "0.17.6"
 notify-debouncer-mini = "0.4.1"
-toml = "0.7.6"
 regex = "1.5"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0.81"
-home = "0.5.3"
-glob = "0.3.0"
-clap = { version = "4.4.0", features = ["derive"] }
+toml = "0.7.6"
+# clippy = "0.0.302"
 
 [[bin]]
 name = "rustlings"
@@ -26,5 +27,5 @@ path = "src/main.rs"
 
 [dev-dependencies]
 assert_cmd = "2.0.12"
-predicates = "3.0.3"
 glob = "0.3.0"
+predicates = "3.0.3"
